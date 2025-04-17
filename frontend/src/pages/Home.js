@@ -11,7 +11,7 @@ const Home = () => {
 
   // console.log(user)
 
-  let url = 'http://localhost:5000/api/foods'
+  let url = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
   
