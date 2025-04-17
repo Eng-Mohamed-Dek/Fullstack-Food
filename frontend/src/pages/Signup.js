@@ -15,7 +15,7 @@ const Signup = () => {
 
     const userData = { email, password }
     
-    let url =  import.meta.env.VITE_REACT_BACKEND;
+    let url =  process.env.REACT_APP_API_URL;
 
     // sent data to mongDB 
     const response = await fetch(url+'/api/login', {

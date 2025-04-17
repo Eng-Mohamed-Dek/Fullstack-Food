@@ -8,7 +8,7 @@ const FoodDetails = ({ foodName, bodyWeight, Meals, id }) => {
 
 
   const handleDelete = async () => {
-    const url = import.meta.env.VITE_REACT_BACKEND;
+    const url = process.env.REACT_APP_API_URL;
     // delete api 
     const response = await fetch(url+'api/foods/' + id, {
       method: 'DELETE',

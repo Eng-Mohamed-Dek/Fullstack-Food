@@ -13,7 +13,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
      e.preventDefault()
 
-    let url = import.meta.env.VITE_REACT_BACKEND;
+    let url = process.env.REACT_APP_API_URL;
     const userData = { email, password }
 
     // sent data to mongDB 

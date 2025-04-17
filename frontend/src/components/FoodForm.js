@@ -21,7 +21,7 @@ const FoodForm = () => {
       return
     }
     
-    const url = import.meta.env.VITE_REACT_BACKEND;
+    const url = process.env.REACT_APP_API_URL;
     const foodData = { foodName, bodyWeight, mealsPer }
     
     // sent data to mongDB 
