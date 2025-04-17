@@ -18,7 +18,7 @@ const Signup = () => {
     let url =  process.env.REACT_APP_API_URL;
 
     // sent data to mongDB 
-    const response = await fetch(url+'/api/signup', {
+    const response = await fetch(url+'/api/user/signup', {
       method: 'POST',
       body: JSON.stringify(userData),
       headers: {

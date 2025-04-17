@@ -17,7 +17,7 @@ const Login = () => {
     const userData = { email, password }
 
     // sent data to mongDB 
-    const response = await fetch(url+'/api/login', {
+    const response = await fetch(url+'/api/user/login', {
       method: 'POST',
       body: JSON.stringify(userData),
       headers: {
