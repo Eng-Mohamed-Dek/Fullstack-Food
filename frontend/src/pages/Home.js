@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
   
   const getData = async () => {
-    const response = await fetch(url+'api/foods/', {
+    const response = await fetch(url+'/api/foods/', {
       headers: { 'Authorization': `Bearer ${user.token}` }
     })
     const data = await response.json()
